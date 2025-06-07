@@ -1,0 +1,62 @@
+<!-- TODO: make different dice faces have different colors -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dice Clicker Game</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      padding: 40px;
+      background-color: #f0f0f0;
+    }
+    #pips {
+      font-size: 48px;
+      margin: 20px 0;
+    }
+    /*
+    button {
+      font-size: 24px;
+      padding: 15px 30px;
+      cursor: pointer;
+      border-radius: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    */
+    #dice-face {
+      /* display: inline-block; */
+      width: 50px;
+      height: 50px;
+      font-size: 35px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 50px;
+      border: 4px solid #333;
+      background-color: #fff;
+      margin: 10px auto;
+      border-radius: 12px;
+      /* box-shadow: 4px 4px 0 #aaa; */
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎲 Dice Clicker Game</h1>
+  <div id="pips">Pips: 0</div>
+  <div id="auto-rollers">Auto-Dice: 0</div>
+  <button onclick="rollDie(1,6)">Click to Roll</button>
+  <button id="add-autod6-btn" onclick="addAutoD6Roller()">AutoRoll</button>
+  <div id="dice-face"></div>
+
+  <!-- Link external JS file -->
+  <script src="clickD6.js"></script>
+
+</body>
+</html>
